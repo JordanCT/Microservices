@@ -10,4 +10,9 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\BCP.Muchik.Invoicement.Application\BCP.Muchik.Invoicement.Application.csproj" />
+    <ProjectReference Include="..\BCP.Muchik.Invoicement.Infrastructure\BCP.Muchik.Invoicement.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>

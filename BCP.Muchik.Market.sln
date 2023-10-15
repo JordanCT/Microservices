@@ -9,7 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Microservices", "Microservi
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Security", "Security", "{26C89307-C85B-4188-88A4-63F2FEA932DF}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Invoice", "Invoice", "{1A848D15-FCD0-41C6-9190-C5408E9A4FCA}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Invoicement", "Invoicement", "{1A848D15-FCD0-41C6-9190-C5408E9A4FCA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Pay", "Pay", "{04F24C0C-BF02-4A23-AA30-CD4435CEA9C6}"
 EndProject
@@ -67,19 +67,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BCP.Muchik.Pay.Infrastructu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BCP.Muchik.Pay.Api", "BCP.Muchik.Pay.Api\BCP.Muchik.Pay.Api.csproj", "{9CFF81F4-C06F-442E-9880-323EBBA91439}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BCP.Muchik.Invoice.Api", "BCP.Muchik.Invoice.Api\BCP.Muchik.Invoice.Api.csproj", "{8B3B06AC-88DB-4720-9D6C-BEFC77E2C55A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BCP.Muchik.Invoicement.Api", "BCP.Muchik.Invoicement.Api\BCP.Muchik.Invoicement.Api.csproj", "{8B3B06AC-88DB-4720-9D6C-BEFC77E2C55A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BCP.Muchik.Transaction.Api", "BCP.Muchik.Transaction.Api\BCP.Muchik.Transaction.Api.csproj", "{9DAE6505-D8BC-401F-85A1-5CA7352D9865}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BCP.Muchik.Transaction.Infrastructure", "BCP.Muchik.Transaction.Infrastructure\BCP.Muchik.Transaction.Infrastructure.csproj", "{95B35E11-DF5A-411A-8612-7697FB27AE6D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BCP.Muchik.Invoice.Infrastructure", "BCP.Muchik.Invoice.Infrastructure\BCP.Muchik.Invoice.Infrastructure.csproj", "{1414BB2F-F8EE-4DF9-B01C-81865EF4B10A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BCP.Muchik.Invoicement.Infrastructure", "BCP.Muchik.Invoicement.Infrastructure\BCP.Muchik.Invoicement.Infrastructure.csproj", "{1414BB2F-F8EE-4DF9-B01C-81865EF4B10A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BCP.Muchik.Invoice.Domain", "BCP.Muchik.Invoice.Domain\BCP.Muchik.Invoice.Domain.csproj", "{DF84E64E-10EE-4DAA-8285-D8129F6FEC3F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BCP.Muchik.Invoicement.Domain", "BCP.Muchik.Invoicement.Domain\BCP.Muchik.Invoicement.Domain.csproj", "{DF84E64E-10EE-4DAA-8285-D8129F6FEC3F}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BCP.Muchik.Transaction.Domain", "BCP.Muchik.Transaction.Domain\BCP.Muchik.Transaction.Domain.csproj", "{C0389570-C125-4BFD-BFE7-2447F33880C1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BCP.Muchik.Invoice.Application", "BCP.Muchik.Invoice.Application\BCP.Muchik.Invoice.Application.csproj", "{5CE30984-18AD-4ADD-BC31-161BBD2A2425}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BCP.Muchik.Invoicement.Application", "BCP.Muchik.Invoicement.Application\BCP.Muchik.Invoicement.Application.csproj", "{5CE30984-18AD-4ADD-BC31-161BBD2A2425}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BCP.Muchik.Transaction.Application", "BCP.Muchik.Transaction.Application\BCP.Muchik.Transaction.Application.csproj", "{C5536A7B-8B32-4991-8F21-D4596BD77F20}"
 EndProject
@@ -89,10 +89,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BCP.Muchik.Infrastructure.G
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CrossCutting", "CrossCutting", "{5D7DC686-66F5-406D-BA6C-6BAB695C7CCC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BCP.Muchik.Infrastructure.CrossCutting", "BCP.Muchik.Infrastructure.CrossCutting\BCP.Muchik.Infrastructure.CrossCutting.csproj", "{27E5CE35-DE6A-4E7B-85CC-55BA26564CDD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BCP.Muchik.Infrastructure.CrossCutting", "BCP.Muchik.Infrastructure.CrossCutting\BCP.Muchik.Infrastructure.CrossCutting.csproj", "{27E5CE35-DE6A-4E7B-85CC-55BA26564CDD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BD", "BD", "{7E295BE9-A94B-4A25-B57A-EF5C08834012}"
 	ProjectSection(SolutionItems) = preProject
+		db_invoice.sql = db_invoice.sql
 		db_security.sql = db_security.sql
 	EndProjectSection
 EndProject
