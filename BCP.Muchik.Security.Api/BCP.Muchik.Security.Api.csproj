@@ -10,4 +10,9 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\BCP.Muchik.Security.Application\BCP.Muchik.Security.Application.csproj" />
+    <ProjectReference Include="..\BCP.Muchik.Security.Infrastructure\BCP.Muchik.Security.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>

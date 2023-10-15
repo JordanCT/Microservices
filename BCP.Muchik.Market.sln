@@ -51,41 +51,50 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentatio
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{8AB7F111-AB87-49B6-A9BB-973AF6D6FA51}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BCP.Muchik.Security.Infrastructure", "BCP.Muchik.Security.Infrastructure\BCP.Muchik.Security.Infrastructure.csproj", "{579ABBBB-396D-48C5-9592-E0D767F56AE7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BCP.Muchik.Security.Infrastructure", "BCP.Muchik.Security.Infrastructure\BCP.Muchik.Security.Infrastructure.csproj", "{579ABBBB-396D-48C5-9592-E0D767F56AE7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BCP.Muchik.Security.Api", "BCP.Muchik.Security.Api\BCP.Muchik.Security.Api.csproj", "{34D340B6-A1DE-4D28-94C5-F9B72450B6D6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BCP.Muchik.Security.Api", "BCP.Muchik.Security.Api\BCP.Muchik.Security.Api.csproj", "{34D340B6-A1DE-4D28-94C5-F9B72450B6D6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BCP.Muchik.Security.Domain", "BCP.Muchik.Security.Domain\BCP.Muchik.Security.Domain.csproj", "{B07C67DC-E993-4CE1-BCF8-EA1880F7F486}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BCP.Muchik.Security.Domain", "BCP.Muchik.Security.Domain\BCP.Muchik.Security.Domain.csproj", "{B07C67DC-E993-4CE1-BCF8-EA1880F7F486}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BCP.Muchik.Security.Application", "BCP.Muchik.Security.Application\BCP.Muchik.Security.Application.csproj", "{D5DFB6B7-5B22-4E51-B320-E12D7EF881EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BCP.Muchik.Security.Application", "BCP.Muchik.Security.Application\BCP.Muchik.Security.Application.csproj", "{D5DFB6B7-5B22-4E51-B320-E12D7EF881EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BCP.Muchik.Pay.Application", "BCP.Muchik.Pay.Application\BCP.Muchik.Pay.Application.csproj", "{05323081-1176-49AC-8E13-B2B539061B07}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BCP.Muchik.Pay.Application", "BCP.Muchik.Pay.Application\BCP.Muchik.Pay.Application.csproj", "{05323081-1176-49AC-8E13-B2B539061B07}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BCP.Muchik.Pay.Domain", "BCP.Muchik.Pay.Domain\BCP.Muchik.Pay.Domain.csproj", "{BD2EE5AF-175E-4600-98BC-E33131D1C775}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BCP.Muchik.Pay.Domain", "BCP.Muchik.Pay.Domain\BCP.Muchik.Pay.Domain.csproj", "{BD2EE5AF-175E-4600-98BC-E33131D1C775}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BCP.Muchik.Pay.Infrastructure", "BCP.Muchik.Pay.Infrastructure\BCP.Muchik.Pay.Infrastructure.csproj", "{4BE80F82-74EA-49C6-AEBB-4F0ED39469FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BCP.Muchik.Pay.Infrastructure", "BCP.Muchik.Pay.Infrastructure\BCP.Muchik.Pay.Infrastructure.csproj", "{4BE80F82-74EA-49C6-AEBB-4F0ED39469FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BCP.Muchik.Pay.Api", "BCP.Muchik.Pay.Api\BCP.Muchik.Pay.Api.csproj", "{9CFF81F4-C06F-442E-9880-323EBBA91439}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BCP.Muchik.Pay.Api", "BCP.Muchik.Pay.Api\BCP.Muchik.Pay.Api.csproj", "{9CFF81F4-C06F-442E-9880-323EBBA91439}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BCP.Muchik.Invoice.Api", "BCP.Muchik.Invoice.Api\BCP.Muchik.Invoice.Api.csproj", "{8B3B06AC-88DB-4720-9D6C-BEFC77E2C55A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BCP.Muchik.Invoice.Api", "BCP.Muchik.Invoice.Api\BCP.Muchik.Invoice.Api.csproj", "{8B3B06AC-88DB-4720-9D6C-BEFC77E2C55A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BCP.Muchik.Transaction.Api", "BCP.Muchik.Transaction.Api\BCP.Muchik.Transaction.Api.csproj", "{9DAE6505-D8BC-401F-85A1-5CA7352D9865}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BCP.Muchik.Transaction.Api", "BCP.Muchik.Transaction.Api\BCP.Muchik.Transaction.Api.csproj", "{9DAE6505-D8BC-401F-85A1-5CA7352D9865}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BCP.Muchik.Transaction.Infrastructure", "BCP.Muchik.Transaction.Infrastructure\BCP.Muchik.Transaction.Infrastructure.csproj", "{95B35E11-DF5A-411A-8612-7697FB27AE6D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BCP.Muchik.Transaction.Infrastructure", "BCP.Muchik.Transaction.Infrastructure\BCP.Muchik.Transaction.Infrastructure.csproj", "{95B35E11-DF5A-411A-8612-7697FB27AE6D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BCP.Muchik.Invoice.Infrastructure", "BCP.Muchik.Invoice.Infrastructure\BCP.Muchik.Invoice.Infrastructure.csproj", "{1414BB2F-F8EE-4DF9-B01C-81865EF4B10A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BCP.Muchik.Invoice.Infrastructure", "BCP.Muchik.Invoice.Infrastructure\BCP.Muchik.Invoice.Infrastructure.csproj", "{1414BB2F-F8EE-4DF9-B01C-81865EF4B10A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BCP.Muchik.Invoice.Domain", "BCP.Muchik.Invoice.Domain\BCP.Muchik.Invoice.Domain.csproj", "{DF84E64E-10EE-4DAA-8285-D8129F6FEC3F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BCP.Muchik.Invoice.Domain", "BCP.Muchik.Invoice.Domain\BCP.Muchik.Invoice.Domain.csproj", "{DF84E64E-10EE-4DAA-8285-D8129F6FEC3F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BCP.Muchik.Transaction.Domain", "BCP.Muchik.Transaction.Domain\BCP.Muchik.Transaction.Domain.csproj", "{C0389570-C125-4BFD-BFE7-2447F33880C1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BCP.Muchik.Transaction.Domain", "BCP.Muchik.Transaction.Domain\BCP.Muchik.Transaction.Domain.csproj", "{C0389570-C125-4BFD-BFE7-2447F33880C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BCP.Muchik.Invoice.Application", "BCP.Muchik.Invoice.Application\BCP.Muchik.Invoice.Application.csproj", "{5CE30984-18AD-4ADD-BC31-161BBD2A2425}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BCP.Muchik.Invoice.Application", "BCP.Muchik.Invoice.Application\BCP.Muchik.Invoice.Application.csproj", "{5CE30984-18AD-4ADD-BC31-161BBD2A2425}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BCP.Muchik.Transaction.Application", "BCP.Muchik.Transaction.Application\BCP.Muchik.Transaction.Application.csproj", "{C5536A7B-8B32-4991-8F21-D4596BD77F20}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BCP.Muchik.Transaction.Application", "BCP.Muchik.Transaction.Application\BCP.Muchik.Transaction.Application.csproj", "{C5536A7B-8B32-4991-8F21-D4596BD77F20}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BCP.Muchik.Infrastructure.Bus", "BCP.Muchik.Infrastructure.Bus\BCP.Muchik.Infrastructure.Bus.csproj", "{244C14BF-C195-444C-8292-C0CEA5FB99C1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BCP.Muchik.Infrastructure.Bus", "BCP.Muchik.Infrastructure.Bus\BCP.Muchik.Infrastructure.Bus.csproj", "{244C14BF-C195-444C-8292-C0CEA5FB99C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BCP.Muchik.Infrastructure.Gateway.Api", "BCP.Muchik.Infrastructure.Gateway.Api\BCP.Muchik.Infrastructure.Gateway.Api.csproj", "{072EF479-9A5F-472B-BCD0-B603C60DC7DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BCP.Muchik.Infrastructure.Gateway.Api", "BCP.Muchik.Infrastructure.Gateway.Api\BCP.Muchik.Infrastructure.Gateway.Api.csproj", "{072EF479-9A5F-472B-BCD0-B603C60DC7DD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CrossCutting", "CrossCutting", "{5D7DC686-66F5-406D-BA6C-6BAB695C7CCC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BCP.Muchik.Infrastructure.CrossCutting", "BCP.Muchik.Infrastructure.CrossCutting\BCP.Muchik.Infrastructure.CrossCutting.csproj", "{27E5CE35-DE6A-4E7B-85CC-55BA26564CDD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BD", "BD", "{7E295BE9-A94B-4A25-B57A-EF5C08834012}"
+	ProjectSection(SolutionItems) = preProject
+		db_security.sql = db_security.sql
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -165,6 +174,10 @@ Global
 		{072EF479-9A5F-472B-BCD0-B603C60DC7DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{072EF479-9A5F-472B-BCD0-B603C60DC7DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{072EF479-9A5F-472B-BCD0-B603C60DC7DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27E5CE35-DE6A-4E7B-85CC-55BA26564CDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27E5CE35-DE6A-4E7B-85CC-55BA26564CDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27E5CE35-DE6A-4E7B-85CC-55BA26564CDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27E5CE35-DE6A-4E7B-85CC-55BA26564CDD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -210,6 +223,9 @@ Global
 		{C5536A7B-8B32-4991-8F21-D4596BD77F20} = {D9AED5B7-5DD2-41C0-B019-BD5B11BDE8BD}
 		{244C14BF-C195-444C-8292-C0CEA5FB99C1} = {D722D59F-986C-45FC-A736-0A2AB72FA447}
 		{072EF479-9A5F-472B-BCD0-B603C60DC7DD} = {5A08DC1B-B3B2-43EB-A80E-DD3C6452887A}
+		{5D7DC686-66F5-406D-BA6C-6BAB695C7CCC} = {37980721-79EF-4A26-863F-D2462D3A91E8}
+		{27E5CE35-DE6A-4E7B-85CC-55BA26564CDD} = {5D7DC686-66F5-406D-BA6C-6BAB695C7CCC}
+		{7E295BE9-A94B-4A25-B57A-EF5C08834012} = {37980721-79EF-4A26-863F-D2462D3A91E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {037979E6-7FA4-4100-87BC-FEE63F9DA14C}

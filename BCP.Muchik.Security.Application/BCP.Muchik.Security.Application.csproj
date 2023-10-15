@@ -1,9 +1,18 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BCP.Muchik.Infrastructure.CrossCutting\BCP.Muchik.Infrastructure.CrossCutting.csproj" />
+    <ProjectReference Include="..\BCP.Muchik.Security.Domain\BCP.Muchik.Security.Domain.csproj" />
+  </ItemGroup>
 
 </Project>
