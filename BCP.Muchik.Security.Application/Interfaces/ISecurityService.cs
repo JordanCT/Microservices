@@ -4,7 +4,7 @@ namespace BCP.Muchik.Security.Application.Interfaces
 {
     public interface ISecurityService
     {
-        void SignUp(CreateUserDto userDto);
+        void SignUp(UserDto userDto);
         SignInResponseDto SignIn(SignInRequestDto signInRequestDto);
     }
 }

@@ -9,7 +9,7 @@
     }
   },
   "profiles": {
-    "BCP.Muchik.Invoice.Api": {
+    "BCP.Muchik.Invoicement.Api": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,

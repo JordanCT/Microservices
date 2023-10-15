@@ -8,7 +8,7 @@ namespace BCP.Muchik.Security.Application.Mappings
     {
         public DtoToEntityProfile()
         {
-            CreateMap<CreateUserDto, User>();
+            CreateMap<UserDto, User>();
         }
     }
 }

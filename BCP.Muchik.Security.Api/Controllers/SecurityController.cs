@@ -1,6 +1,5 @@
 ﻿using BCP.Muchik.Security.Application.Dtos;
 using BCP.Muchik.Security.Application.Interfaces;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BCP.Muchik.Security.Api.Controllers
@@ -16,7 +15,7 @@ namespace BCP.Muchik.Security.Api.Controllers
         }
 
         [HttpPost("signUp")]
-        public IActionResult SignUp([FromBody] CreateUserDto userDto)
+        public IActionResult SignUp([FromBody] UserDto userDto)
         {
             _securityService.SignUp(userDto);
             return Ok();
