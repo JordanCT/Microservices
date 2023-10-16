@@ -7,12 +7,10 @@ namespace BCP.Muchik.Invoicement.Application.EventHandlers
 {
     public class InvoicePayEventHandler : IEventHandler<InvoicePayEvent>
     {
-        private readonly IEventBus _eventBus;
         private readonly IInvoicementService _invoicementService;
 
-        public InvoicePayEventHandler(IEventBus eventBus, IInvoicementService invoicementService)
+        public InvoicePayEventHandler(IInvoicementService invoicementService)
         {
-            _eventBus = eventBus;
             _invoicementService = invoicementService;
         }
     
