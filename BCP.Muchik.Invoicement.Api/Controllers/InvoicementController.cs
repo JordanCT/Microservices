@@ -21,9 +21,9 @@ namespace BCP.Muchik.Invoicement.Api.Controllers
         }
 
         [HttpPost("createInvoice")]
-        public IActionResult CreateInvoice([FromBody] CreateInvoiceDto invoiceDto) 
+        public IActionResult CreateInvoice([FromBody] CreateInvoiceDto createInvoiceDto) 
         {
-            return Ok(_invoicementService.CreateInvoice(invoiceDto));
+            return Ok(_invoicementService.CreateInvoice(createInvoiceDto));
         }
     }
 }

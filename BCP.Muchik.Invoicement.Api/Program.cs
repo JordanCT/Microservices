@@ -1,3 +1,8 @@
+using BCP.Muchik.Infrastructure.EventBus.Interfaces;
+using BCP.Muchik.Infrastructure.EventBusRabbitMQ;
+using BCP.Muchik.Infrastructure.EventBusRabbitMQ.Settings;
+using BCP.Muchik.Invoicement.Application.EventHandlers;
+using BCP.Muchik.Invoicement.Application.Events;
 using BCP.Muchik.Invoicement.Application.Interfaces;
 using BCP.Muchik.Invoicement.Application.Mappings;
 using BCP.Muchik.Invoicement.Application.Services;
@@ -19,7 +24,12 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<InvoicementContext>(config =>
 {
     config.UseNpgsql(builder.Configuration.GetConnectionString("InvoicementConnection"));
+    //config.UseNpgsql(builder.Configuration.GetValue<string>("ConnectionStrings:InvoicementConnection"));
 });
+//RabbitMQ
+builder.Services.Configure<RabbitMqSettings>(builder.Configuration.GetSection("RabbitMqSettings"));
+builder.Services.RegisterRabbitServices(builder.Configuration);
+
 //AutoMapper
 builder.Services.AddAutoMapper(typeof(EntityToDtoProfile), typeof(DtoToEntityProfile));
 //Services
@@ -28,8 +38,15 @@ builder.Services.AddTransient<IInvoicementService, InvoicementService>();
 builder.Services.AddTransient<IInvoiceRepository, InvoiceRepository>();
 //Context
 builder.Services.AddTransient<InvoicementContext>();
+//Event & EventHandlers
+builder.Services.AddTransient<IEventHandler<InvoicePayEvent>, InvoicePayEventHandler>();
+builder.Services.AddTransient<InvoicePayEventHandler>();
 
 var app = builder.Build();
+
+//Subscriptions EventBus
+var eventBus = app.Services.GetRequiredService<IEventBus>();
+eventBus.Subscribe<InvoicePayEvent, InvoicePayEventHandler>();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

@@ -5,6 +5,7 @@ namespace BCP.Muchik.Invoicement.Application.Interfaces
     public interface IInvoicementService
     {
         ICollection<InvoiceDto> GetAllInvoives();
-        CreateInvoiceDto CreateInvoice(CreateInvoiceDto invoiceDto);
+        InvoiceDto CreateInvoice(CreateInvoiceDto createInvoiceDto);
+        bool PayInvoice(PayInvoiceDto payInvoiceDto);
     }
 }

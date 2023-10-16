@@ -11,13 +11,13 @@ namespace BCP.Muchik.Invoicement.Domain.Interfaces
             Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, string includeProperties = "");
         IQueryable<T> Query(Expression<Func<T, bool>> filter = null,
             Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, string includeProperties = "");
-        T GetById(string id);
+        T GetById(int id);
         void Remove(T entity);
         void RemoveRange(IEnumerable<T> entities);
         void Update(T entityToUpdate);
-        void Update(T entityToUpdate, Func<T, string> getKey);
+        void Update(T entityToUpdate, Func<T, int> getKey);
         void Unmark(T entity);
         IQueryable<T> Queryable();
-        void Save();
+        bool Save();
     }
 }

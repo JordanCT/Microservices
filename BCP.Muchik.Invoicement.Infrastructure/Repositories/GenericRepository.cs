@@ -81,7 +81,7 @@ namespace BCP.Muchik.Invoicement.Infrastructure.Repositories
             }
         }
 
-        public T GetById(string id)
+        public T GetById(int id)
         {
             return _context.Set<T>().Find(id);
         }
@@ -102,7 +102,7 @@ namespace BCP.Muchik.Invoicement.Infrastructure.Repositories
             _context.Entry(entityToUpdate).State = EntityState.Modified;
         }
 
-        public virtual void Update(T entityToUpdate, Func<T, string> getKey)
+        public virtual void Update(T entityToUpdate, Func<T, int> getKey)
         {
             var entry = _context.Entry<T>(entityToUpdate);
 
@@ -132,15 +132,15 @@ namespace BCP.Muchik.Invoicement.Infrastructure.Repositories
             return _context.Set<T>().AsQueryable<T>();
         }
 
-        public virtual void Save()
+        public virtual bool Save()
         {
             try
             {
-                _context.SaveChanges();
+                return _context.SaveChanges() > 0;
             }
             catch (Exception ex)
             {
-
+                return false;
             }
 
         }

@@ -17,7 +17,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Transaction", "Transaction"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateway", "Gateway", "{5A08DC1B-B3B2-43EB-A80E-DD3C6452887A}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bus", "Bus", "{D722D59F-986C-45FC-A736-0A2AB72FA447}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EventBus", "EventBus", "{D722D59F-986C-45FC-A736-0A2AB72FA447}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{7584B7D5-6EF8-4014-A52B-C4249FFA8E31}"
 EndProject
@@ -83,7 +83,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BCP.Muchik.Invoicement.Appl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BCP.Muchik.Transaction.Application", "BCP.Muchik.Transaction.Application\BCP.Muchik.Transaction.Application.csproj", "{C5536A7B-8B32-4991-8F21-D4596BD77F20}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BCP.Muchik.Infrastructure.Bus", "BCP.Muchik.Infrastructure.Bus\BCP.Muchik.Infrastructure.Bus.csproj", "{244C14BF-C195-444C-8292-C0CEA5FB99C1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BCP.Muchik.Infrastructure.EventBus", "BCP.Muchik.Infrastructure.EventBus\BCP.Muchik.Infrastructure.EventBus.csproj", "{244C14BF-C195-444C-8292-C0CEA5FB99C1}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BCP.Muchik.Infrastructure.Gateway.Api", "BCP.Muchik.Infrastructure.Gateway.Api\BCP.Muchik.Infrastructure.Gateway.Api.csproj", "{072EF479-9A5F-472B-BCD0-B603C60DC7DD}"
 EndProject
@@ -96,6 +96,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BD", "BD", "{7E295BE9-A94B-
 		db_invoice.sql = db_invoice.sql
 		db_security.sql = db_security.sql
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BCP.Muchik.Infrastructure.EventBusRabbitMQ", "BCP.Muchik.Infrastructure.EventBusRabbitMQ\BCP.Muchik.Infrastructure.EventBusRabbitMQ.csproj", "{8C50ED3E-9BBA-4915-80DB-5EB73B6DACB6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -179,6 +181,10 @@ Global
 		{27E5CE35-DE6A-4E7B-85CC-55BA26564CDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{27E5CE35-DE6A-4E7B-85CC-55BA26564CDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{27E5CE35-DE6A-4E7B-85CC-55BA26564CDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C50ED3E-9BBA-4915-80DB-5EB73B6DACB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C50ED3E-9BBA-4915-80DB-5EB73B6DACB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C50ED3E-9BBA-4915-80DB-5EB73B6DACB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C50ED3E-9BBA-4915-80DB-5EB73B6DACB6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -227,6 +233,7 @@ Global
 		{5D7DC686-66F5-406D-BA6C-6BAB695C7CCC} = {37980721-79EF-4A26-863F-D2462D3A91E8}
 		{27E5CE35-DE6A-4E7B-85CC-55BA26564CDD} = {5D7DC686-66F5-406D-BA6C-6BAB695C7CCC}
 		{7E295BE9-A94B-4A25-B57A-EF5C08834012} = {37980721-79EF-4A26-863F-D2462D3A91E8}
+		{8C50ED3E-9BBA-4915-80DB-5EB73B6DACB6} = {D722D59F-986C-45FC-A736-0A2AB72FA447}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {037979E6-7FA4-4100-87BC-FEE63F9DA14C}
