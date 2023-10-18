@@ -1,0 +1,15 @@
+{
+  "profiles": {
+    "Docker Compose": {
+      "commandName": "DockerCompose",
+      "commandVersion": "1.0",
+      "serviceActions": {
+        "bcp.muchik.infrastructure.gateway.api": "StartDebugging",
+        "bcp.muchik.invoicement.api": "StartDebugging",
+        "bcp.muchik.movement.api": "StartDebugging",
+        "bcp.muchik.payment.api": "StartDebugging",
+        "bcp.muchik.security.api": "StartDebugging"
+      }
+    }
+  }
+}
