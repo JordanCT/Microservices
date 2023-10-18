@@ -13,7 +13,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Invoicement", "Invoicement"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Payment", "Payment", "{04F24C0C-BF02-4A23-AA30-CD4435CEA9C6}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Transaction", "Transaction", "{7CFD8C57-269C-44BE-928D-CBBEB8E2352F}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Movement", "Movement", "{7CFD8C57-269C-44BE-928D-CBBEB8E2352F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateway", "Gateway", "{5A08DC1B-B3B2-43EB-A80E-DD3C6452887A}"
 EndProject
@@ -69,19 +69,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BCP.Muchik.Payment.Api", "B
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BCP.Muchik.Invoicement.Api", "BCP.Muchik.Invoicement.Api\BCP.Muchik.Invoicement.Api.csproj", "{8B3B06AC-88DB-4720-9D6C-BEFC77E2C55A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BCP.Muchik.Transaction.Api", "BCP.Muchik.Transaction.Api\BCP.Muchik.Transaction.Api.csproj", "{9DAE6505-D8BC-401F-85A1-5CA7352D9865}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BCP.Muchik.Movement.Api", "BCP.Muchik.Movement.Api\BCP.Muchik.Movement.Api.csproj", "{9DAE6505-D8BC-401F-85A1-5CA7352D9865}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BCP.Muchik.Transaction.Infrastructure", "BCP.Muchik.Transaction.Infrastructure\BCP.Muchik.Transaction.Infrastructure.csproj", "{95B35E11-DF5A-411A-8612-7697FB27AE6D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BCP.Muchik.Movement.Infrastructure", "BCP.Muchik.Movement.Infrastructure\BCP.Muchik.Movement.Infrastructure.csproj", "{95B35E11-DF5A-411A-8612-7697FB27AE6D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BCP.Muchik.Invoicement.Infrastructure", "BCP.Muchik.Invoicement.Infrastructure\BCP.Muchik.Invoicement.Infrastructure.csproj", "{1414BB2F-F8EE-4DF9-B01C-81865EF4B10A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BCP.Muchik.Invoicement.Domain", "BCP.Muchik.Invoicement.Domain\BCP.Muchik.Invoicement.Domain.csproj", "{DF84E64E-10EE-4DAA-8285-D8129F6FEC3F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BCP.Muchik.Transaction.Domain", "BCP.Muchik.Transaction.Domain\BCP.Muchik.Transaction.Domain.csproj", "{C0389570-C125-4BFD-BFE7-2447F33880C1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BCP.Muchik.Movement.Domain", "BCP.Muchik.Movement.Domain\BCP.Muchik.Movement.Domain.csproj", "{C0389570-C125-4BFD-BFE7-2447F33880C1}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BCP.Muchik.Invoicement.Application", "BCP.Muchik.Invoicement.Application\BCP.Muchik.Invoicement.Application.csproj", "{5CE30984-18AD-4ADD-BC31-161BBD2A2425}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BCP.Muchik.Transaction.Application", "BCP.Muchik.Transaction.Application\BCP.Muchik.Transaction.Application.csproj", "{C5536A7B-8B32-4991-8F21-D4596BD77F20}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BCP.Muchik.Movement.Application", "BCP.Muchik.Movement.Application\BCP.Muchik.Movement.Application.csproj", "{C5536A7B-8B32-4991-8F21-D4596BD77F20}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BCP.Muchik.Infrastructure.EventBus", "BCP.Muchik.Infrastructure.EventBus\BCP.Muchik.Infrastructure.EventBus.csproj", "{244C14BF-C195-444C-8292-C0CEA5FB99C1}"
 EndProject
@@ -96,6 +96,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BD", "BD", "{7E295BE9-A94B-
 		db_invoice.sql = db_invoice.sql
 		db_operation.sql = db_operation.sql
 		db_security.sql = db_security.sql
+		db_transaction.js = db_transaction.js
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BCP.Muchik.Infrastructure.EventBusRabbitMQ", "BCP.Muchik.Infrastructure.EventBusRabbitMQ\BCP.Muchik.Infrastructure.EventBusRabbitMQ.csproj", "{8C50ED3E-9BBA-4915-80DB-5EB73B6DACB6}"
