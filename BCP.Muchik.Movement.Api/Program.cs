@@ -11,6 +11,7 @@ using BCP.Muchik.Movement.Domain.Interfaces;
 using BCP.Muchik.Movement.Infrastructure.Context;
 using BCP.Muchik.Movement.Infrastructure.Repositories;
 using BCP.Muchik.Movement.Infrastructure.Settings;
+using Steeltoe.Discovery.Client;
 using Steeltoe.Extensions.Configuration.ConfigServer;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -41,6 +42,9 @@ builder.Services.AddSingleton<MovementContext>();
 //Event & EventHandlers
 builder.Services.AddTransient<IEventHandler<TransactionConfirmEvent>, TransactionConfirmEventHandler>();
 builder.Services.AddTransient<TransactionConfirmEventHandler>();
+
+//Consul
+builder.Services.AddDiscoveryClient();
 
 var app = builder.Build();
 

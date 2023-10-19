@@ -11,6 +11,7 @@ using BCP.Muchik.Invoicement.Domain.Interfaces;
 using BCP.Muchik.Invoicement.Infrastructure.Context;
 using BCP.Muchik.Invoicement.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
+using Steeltoe.Discovery.Client;
 using Steeltoe.Extensions.Configuration.ConfigServer;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -45,6 +46,9 @@ builder.Services.AddTransient<InvoicementContext>();
 //Event & EventHandlers
 builder.Services.AddTransient<IEventHandler<InvoicePayEvent>, InvoicePayEventHandler>();
 builder.Services.AddTransient<InvoicePayEventHandler>();
+
+//Consul
+builder.Services.AddDiscoveryClient();
 
 var app = builder.Build();
 

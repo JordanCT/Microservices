@@ -8,6 +8,7 @@ using BCP.Muchik.Security.Domain.Interfaces;
 using BCP.Muchik.Security.Infrastructure.Context;
 using BCP.Muchik.Security.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
+using Steeltoe.Discovery.Client;
 using Steeltoe.Extensions.Configuration.ConfigServer;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -37,6 +38,9 @@ builder.Services.AddTransient<IUserRepository, UserRepository>();
 builder.Services.AddTransient<SecurityContext>();
 //CrossCutting
 builder.Services.AddTransient<IJwtManager, JwtManager>();
+
+//Consul
+builder.Services.AddDiscoveryClient();
 
 var app = builder.Build();
 

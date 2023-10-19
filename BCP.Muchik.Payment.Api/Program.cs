@@ -8,6 +8,7 @@ using BCP.Muchik.Payment.Domain.Interfaces;
 using BCP.Muchik.Payment.Infrastructure.Context;
 using BCP.Muchik.Payment.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
+using Steeltoe.Discovery.Client;
 using Steeltoe.Extensions.Configuration.ConfigServer;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -38,6 +39,9 @@ builder.Services.AddTransient<IPaymentService, PaymentService>();
 builder.Services.AddTransient<IPayRepository, PayRepository>();
 //Context
 builder.Services.AddTransient<PaymentContext>();
+
+//Consul
+builder.Services.AddDiscoveryClient();
 
 var app = builder.Build();
 
