@@ -1,3 +1,4 @@
+using BCP.Muchik.Infrastructure.CrossCutting.Statics;
 using BCP.Muchik.Infrastructure.EventBus.Interfaces;
 using BCP.Muchik.Infrastructure.EventBusRabbitMQ;
 using BCP.Muchik.Infrastructure.EventBusRabbitMQ.Settings;
@@ -10,8 +11,12 @@ using BCP.Muchik.Invoicement.Domain.Interfaces;
 using BCP.Muchik.Invoicement.Infrastructure.Context;
 using BCP.Muchik.Invoicement.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
+using Steeltoe.Extensions.Configuration.ConfigServer;
 
 var builder = WebApplication.CreateBuilder(args);
+
+// Add config server
+builder.AddConfigServer();
 
 // Add services to the container.
 
@@ -23,8 +28,7 @@ builder.Services.AddSwaggerGen();
 //Postgres
 builder.Services.AddDbContext<InvoicementContext>(config =>
 {
-    config.UseNpgsql(builder.Configuration.GetConnectionString("InvoicementConnection"));
-    //config.UseNpgsql(builder.Configuration.GetValue<string>("ConnectionStrings:InvoicementConnection"));
+    config.UseNpgsql(builder.Configuration.GetValue<string>("ConnectionStrings:InvoicementConnection"));
 });
 //RabbitMQ
 builder.Services.Configure<RabbitMqSettings>(builder.Configuration.GetSection("RabbitMqSettings"));
@@ -49,7 +53,7 @@ var eventBus = app.Services.GetRequiredService<IEventBus>();
 eventBus.Subscribe<InvoicePayEvent, InvoicePayEventHandler>();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+if (app.Environment.IsDevelopment() || app.Environment.IsEnvironment(CustomEnvironments.Development))
 {
     app.UseSwagger();
     app.UseSwaggerUI();

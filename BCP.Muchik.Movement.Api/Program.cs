@@ -1,3 +1,4 @@
+using BCP.Muchik.Infrastructure.CrossCutting.Statics;
 using BCP.Muchik.Infrastructure.EventBus.Interfaces;
 using BCP.Muchik.Infrastructure.EventBusRabbitMQ;
 using BCP.Muchik.Infrastructure.EventBusRabbitMQ.Settings;
@@ -10,8 +11,12 @@ using BCP.Muchik.Movement.Domain.Interfaces;
 using BCP.Muchik.Movement.Infrastructure.Context;
 using BCP.Muchik.Movement.Infrastructure.Repositories;
 using BCP.Muchik.Movement.Infrastructure.Settings;
+using Steeltoe.Extensions.Configuration.ConfigServer;
 
 var builder = WebApplication.CreateBuilder(args);
+
+// Add config server
+builder.AddConfigServer();
 
 // Add services to the container.
 
@@ -44,7 +49,7 @@ var eventBus = app.Services.GetRequiredService<IEventBus>();
 eventBus.Subscribe<TransactionConfirmEvent, TransactionConfirmEventHandler>();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+if (app.Environment.IsDevelopment() || app.Environment.IsEnvironment(CustomEnvironments.Development))
 {
     app.UseSwagger();
     app.UseSwaggerUI();

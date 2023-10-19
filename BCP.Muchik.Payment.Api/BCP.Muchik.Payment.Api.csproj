@@ -10,10 +10,12 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.17.0" />
+    <PackageReference Include="Steeltoe.Extensions.Configuration.ConfigServerCore" Version="3.2.4" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BCP.Muchik.Infrastructure.CrossCutting\BCP.Muchik.Infrastructure.CrossCutting.csproj" />
     <ProjectReference Include="..\BCP.Muchik.Infrastructure.EventBusRabbitMQ\BCP.Muchik.Infrastructure.EventBusRabbitMQ.csproj" />
     <ProjectReference Include="..\BCP.Muchik.Payment.Application\BCP.Muchik.Payment.Application.csproj" />
     <ProjectReference Include="..\BCP.Muchik.Payment.Infrastructure\BCP.Muchik.Payment.Infrastructure.csproj" />

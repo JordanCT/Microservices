@@ -7,6 +7,7 @@ EXPOSE 80
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
 COPY ["BCP.Muchik.Payment.Api/BCP.Muchik.Payment.Api.csproj", "BCP.Muchik.Payment.Api/"]
+COPY ["BCP.Muchik.Infrastructure.CrossCutting/BCP.Muchik.Infrastructure.CrossCutting.csproj", "BCP.Muchik.Infrastructure.CrossCutting/"]
 COPY ["BCP.Muchik.Infrastructure.EventBusRabbitMQ/BCP.Muchik.Infrastructure.EventBusRabbitMQ.csproj", "BCP.Muchik.Infrastructure.EventBusRabbitMQ/"]
 COPY ["BCP.Muchik.Infrastructure.EventBus/BCP.Muchik.Infrastructure.EventBus.csproj", "BCP.Muchik.Infrastructure.EventBus/"]
 COPY ["BCP.Muchik.Payment.Application/BCP.Muchik.Payment.Application.csproj", "BCP.Muchik.Payment.Application/"]
