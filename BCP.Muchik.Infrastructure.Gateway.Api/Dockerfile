@@ -7,6 +7,7 @@ EXPOSE 80
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
 COPY ["BCP.Muchik.Infrastructure.Gateway.Api/BCP.Muchik.Infrastructure.Gateway.Api.csproj", "BCP.Muchik.Infrastructure.Gateway.Api/"]
+COPY ["BCP.Muchik.Infrastructure.CrossCutting/BCP.Muchik.Infrastructure.CrossCutting.csproj", "BCP.Muchik.Infrastructure.CrossCutting/"]
 RUN dotnet restore "BCP.Muchik.Infrastructure.Gateway.Api/BCP.Muchik.Infrastructure.Gateway.Api.csproj"
 COPY . .
 WORKDIR "/src/BCP.Muchik.Infrastructure.Gateway.Api"
