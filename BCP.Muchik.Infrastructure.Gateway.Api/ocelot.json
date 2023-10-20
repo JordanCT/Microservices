@@ -1,0 +1,56 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/security/{everything_else}",
+      "DownstreamScheme": "http",
+      "UseServiceDiscovery": true,
+      "ServiceName": "muchik-security",
+      "UpstreamPathTemplate": "/security/{everything_else}",
+      "UpstreamHttpMethod": [ "GET", "POST" ]
+    },
+    {
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "DownstreamPathTemplate": "/api/invoicement/{everything_else}",
+      "DownstreamScheme": "http",
+      "UseServiceDiscovery": true,
+      "ServiceName": "muchik-invoicement",
+      "UpstreamPathTemplate": "/invoicement/{everything_else}",
+      "UpstreamHttpMethod": [ "GET", "POST" ]
+    },
+    {
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "DownstreamPathTemplate": "/api/movement/{everything_else}",
+      "DownstreamScheme": "http",
+      "UseServiceDiscovery": true,
+      "ServiceName": "muchik-movement",
+      "UpstreamPathTemplate": "/movement/{everything_else}",
+      "UpstreamHttpMethod": [ "GET", "POST" ]
+    },
+    {
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "DownstreamPathTemplate": "/api/payment/{everything_else}",
+      "DownstreamScheme": "http",
+      "UseServiceDiscovery": true,
+      "ServiceName": "muchik-payment",
+      "UpstreamPathTemplate": "/payment/{everything_else}",
+      "UpstreamHttpMethod": [ "GET", "POST" ]
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://nh.qhatu.api.gateway",
+    "ServiceDiscoveryProvider": {
+      "Host": "local-consul",
+      "Port": "8500",
+      "Type": "Consul"
+    }
+  }
+}

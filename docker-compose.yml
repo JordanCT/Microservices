@@ -1,0 +1,31 @@
+version: '3.4'
+services:
+  bcp.muchik.movement.api:
+    image: ${DOCKER_REGISTRY-}bcpmuchikmovementapi
+    build:
+      context: .
+      dockerfile: BCP.Muchik.Movement.Api/Dockerfile
+  bcp.muchik.invoicement.api:
+    image: ${DOCKER_REGISTRY-}bcpmuchikinvoicementapi
+    build:
+      context: .
+      dockerfile: BCP.Muchik.Invoicement.Api/Dockerfile
+  bcp.muchik.payment.api:
+    image: ${DOCKER_REGISTRY-}bcpmuchikpaymentapi
+    build:
+      context: .
+      dockerfile: BCP.Muchik.Payment.Api/Dockerfile
+  bcp.muchik.security.api:
+    image: ${DOCKER_REGISTRY-}bcpmuchiksecurityapi
+    build:
+      context: .
+      dockerfile: BCP.Muchik.Security.Api/Dockerfile
+  bcp.muchik.infrastructure.gateway.api:
+    image: ${DOCKER_REGISTRY-}bcpmuchikinfrastructuregatewayapi
+    build:
+      context: .
+      dockerfile: BCP.Muchik.Infrastructure.Gateway.Api/Dockerfile
+networks:
+  default:
+    external:
+      name: muchik-nw

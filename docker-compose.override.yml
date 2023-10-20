@@ -1,0 +1,36 @@
+version: '3.4'
+
+services:
+  bcp.muchik.movement.api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=dev
+    ports:
+      - "9204:80"
+
+  bcp.muchik.invoicement.api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=dev
+    ports:
+      - "9203:80"
+
+
+  bcp.muchik.payment.api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=dev
+    ports:
+      - "9202:80"
+
+
+  bcp.muchik.security.api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=dev
+    ports:
+      - "9201:80"
+
+
+  bcp.muchik.infrastructure.gateway.api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=dev
+    ports:
+      - "9200:80"
+

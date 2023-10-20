@@ -35,7 +35,7 @@ namespace BCP.Muchik.Security.Application.Services
             return signInResponseDto;
         }
 
-        public void SignUp(CreateUserDto userDto)
+        public void SignUp(UserDto userDto)
         {
             var currentUser = GetUserByUsername(userDto.Username);
             if (currentUser is not null)
